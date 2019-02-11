@@ -18,14 +18,14 @@ const instructions = Platform.select({
     "Shake or press menu button for dev menu",
 });
 
-interface Props { }
+interface Props {}
 export default class App extends Component<Props> {
-  public render() {
+  render() {
     return (
-      <View style={ styles.container}>
-        <Text style={ styles.welcome}>Welcome to React Native!</Text>
-        <Text style={ styles.instructions}>To get started, edit App.tsx</Text>
-        <Text style={ styles.instructions}>{ instructions}</Text>
+      <View style={styles.container}>
+        <Text style={styles.welcome}>Welcome to =)!</Text>
+        <Text style={styles.instructions}>To get started, edit App.tsx</Text>
+        <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
   }
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   instructions: {
     textAlign: "center",
-    color: "#333333",
+    color: "#444888",
     marginBottom: 5,
   },
 });
