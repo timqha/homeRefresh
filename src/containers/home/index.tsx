@@ -5,7 +5,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default class Home extends React.Component<> {
+interface Props {
+  email?: string;
+}
+export default class Home extends React.Component<Props> {
   render() {
     return (
       <View style={styles.container}>

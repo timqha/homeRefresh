@@ -1,10 +1,12 @@
 
-import { observable, computed, action } from 'mobx';
+import { observable, action } from "mobx";
 
-class AuthStore {
+import { IAuthStore } from "../types";
+
+class AuthStore implements IAuthStore {
   @observable email = "email";
 
-  @action setEmail(email) {
+  @action setEmail(email: string) {
     this.email = email;
   }
 

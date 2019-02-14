@@ -7,7 +7,9 @@
     "test": "jest",
     "tsc": "tsc",
     "lint": "tslint --project tsconfig.json src/**/*.{ts,tsx} -e src/**/*.spec.*",
-    "lintFix": "tslint --project tsconfig.json --fix -e src/**/*.spec.*"
+    "lintFix": "tslint --project tsconfig.json --fix -e src/**/*.spec.*",
+    "precommit":"yarn lint && yarn test",
+    "prepush": "yarn lint && yarn test"
   },
   "dependencies": {
     "mobx": "4.3.2",
@@ -15,6 +17,7 @@
     "mobx-react": "^5.4.3",
     "react": "16.6.3",
     "react-native": "0.58.4",
+    "react-navigation": "^3.2.3",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
@@ -34,6 +37,7 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
+    "husky": "^1.3.1",
     "jest": "24.1.0",
     "jest-fetch-mock": "^2.1.0",
     "metro-react-native-babel-preset": "0.51.1",

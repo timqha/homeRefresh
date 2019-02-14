@@ -5,11 +5,16 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
-export default class SignIn extends React.Component<> {
+interface Props {}
+export default class SignIn extends React.Component<Props> {
+  signIn = () => {
+    alert("SIgnIN");
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <TouchableOpacity onPress={() => alert("SIgnIN")}>
+        <TouchableOpacity onPress={this.signIn}>
           <Text style={styles.welcome}>SIGN IN!</Text>
         </TouchableOpacity>
         <Text style={styles.instructions}>To get started, edit App.tsx</Text>
